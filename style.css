@@ -1,0 +1,210 @@
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+
+body {
+  min-width: 976px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+article {
+  margin: 3em 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  color: #505e67;
+}
+
+h1,
+h2 {
+  font-size: 2.2em;
+  text-transform: capitalize;
+  border-bottom: 1px dashed lightgray;
+}
+h3 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  margin: 1em 0;
+}
+
+em {
+  display: block;
+  text-align: right;
+  margin: 0.5em 0;
+}
+/* End of General Styles */
+
+/* Header styles */
+
+.logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 1em auto;
+}
+
+.logo figcaption {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+
+  font-size: 3em;
+  font-weight: 800;
+  color: #232244;
+}
+
+.logo img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+header nav {
+  background-image: url(images/blacktile.jpg);
+  padding: 1.5em;
+}
+
+header nav ul {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* End of Header Styles */
+
+/* Main Section styles */
+.hero-content p {
+  margin: 1em 0;
+}
+
+/* Gallery Styles */
+.gallery_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gallery figure {
+  padding: 0.2em;
+  border: 1px lightgray solid;
+  margin: 0 auto;
+}
+/* End of Gallery Styles */
+
+/* Testimonials */
+.wrapper {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.wrapper section {
+  border: 2px lightgray outset;
+  width: 90%;
+  margin: 1.5em 0;
+  border-radius: 10px;
+  padding: 0.7em;
+}
+
+.wrapper section:nth-child(even) {
+  margin-left: 20%;
+}
+
+.wrapper section p {
+  padding: 0.5em 0;
+  border-top: 1px dashed lightgray;
+  border-bottom: 1px dashed lightgray;
+}
+.wrapper section h3 {
+  margin: 0.5em 0;
+}
+/* End of Testimonials */
+
+/* Table style */
+
+table {
+  border-radius: 10px;
+  margin: 1em auto;
+  width: 95%;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px lightgray solid;
+  padding: 1em;
+  color: #505e67;
+  text-align: center;
+}
+
+thead th {
+  color: #fff;
+  background-color: #505e67;
+}
+
+tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+/* End of Table style */
+/* End of Main styles */
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: #232244;
+}
+
+footer nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer nav ul {
+  display: flex;
+  padding: 1.5em 0;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+/* End of Footer Styles */
+
+.email {
+  display: block;
+  color: #fff;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  background-color: #232244;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
